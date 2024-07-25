@@ -6,17 +6,20 @@
 
 
 ### Run with Bash Script
-```cd CoRF
+```
+cd CoRF
 ./start-safe.sh
 ```
 ### Run with Command line 
-```python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds 10
+```
+python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds 10
 ```
 
 or
 ### Run with overall time limit
 
-```time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds
+```
+time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds
 ```
 
 

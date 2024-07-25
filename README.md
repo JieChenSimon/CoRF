@@ -1,5 +1,9 @@
 # CoRF
 
+### Run with Bash Script
+```cd CoRF
+./start-safe.sh
+```
 ### Run with Command line 
 ```python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds 10```
 

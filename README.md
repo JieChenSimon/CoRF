@@ -12,7 +12,9 @@ cd CoRF
 ```
 ### Run with Command line 
 ```
-python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds 10
+python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds 15 --llm codegemma-fuzz
+
+python3 -m llmfuzz --proj example/wallet --contract Wallet --fuzzer llmAgent --limit 2000 --max_rounds 15 --llm codegemma-fuzz
 ```
 
 or

@@ -6,7 +6,7 @@
 
 ### Generate Transaction.json
 ```
-python3 script/extract.py --proj example/wallet/ --port 8545
+python3 script/extract.py --proj example/wallet --port 8545 --fuzz_contract Wallet
 ```
 ### Run with Bash Script
 ```

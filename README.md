@@ -39,11 +39,13 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
   ```shell
   truffle init
   ```
-- The initialized file structure will be as follows:
-|-- contracts
-|-- migrations
-|-- test
-`-- truffle-config.js
+ ```shell
+  |-- contracts
+  |-- migrations
+  |-- test
+  `-- truffle-config.js
+  
+  3 directories, 1 file
+  ```
 
-3 directories, 1 file
 

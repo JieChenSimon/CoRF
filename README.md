@@ -22,11 +22,19 @@ $ sudo mv go /usr/lib/go-1.10
 Note: Then you should set `GOPATH` to CoRF folder.
 ```
 
-2. Install Ollama `curl https://ollama.ai/install.sh |sh`
-
-3. Install execution backend:
+3. Install Ollama
 ```
-$ go build -o execution.so -buildmode=c-shared export/execution.go
+curl https://ollama.ai/install.sh |sh
+```
+
+4. Install python dependencies:
+```
+pip3 install -r requirements.txt
+```
+
+5. Install execution backend:
+```
+go build -o execution.so -buildmode=c-shared export/execution.go
 ```
 
 -----------------------------------------------------------

@@ -8,9 +8,9 @@
 
 1. Install [solc](https://github.com/ethereum/solidity) 0.4.25:
 ```
-$ wget https://github.com/ethereum/solidity/releases/download/v0.4.25/solc-static-linux
-$ chmod +x solc-static-linux
-$ sudo mv solc-static-linux /usr/bin/solc
+wget https://github.com/ethereum/solidity/releases/download/v0.4.25/solc-static-linux
+chmod +x solc-static-linux
+sudo mv solc-static-linux /usr/bin/solc
 ```
 
 2. Install [golang](https://golang.org/), for example:

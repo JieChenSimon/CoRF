@@ -30,4 +30,20 @@ or
 time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds
 ```
 
+### Analyze Your Own Smart Contracts
+
+#### Initializing File Structure with `truffle`
+
+- Create a new folder named `test` in the path `rlf/example`. Open a terminal in this folder and execute:
+
+  ```shell
+  truffle init
+  ```
+- The initialized file structure will be as follows:
+|-- contracts
+|-- migrations
+|-- test
+`-- truffle-config.js
+
+3 directories, 1 file
 

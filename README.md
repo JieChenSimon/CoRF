@@ -74,6 +74,8 @@ or
 time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuzzer llmAgent --limit 2000 --max_rounds
 ```
 
+-----------------------------------------------------------
+
 ### Analyze Your Own Smart Contracts (Step-by-Step Guides)
 
 #### 1. Initializing File Structure with `truffle`

@@ -48,4 +48,8 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
   3 directories, 1 file
   ```
 
+- Copy the files from rlf/example/crowdsale/migrations to the migrations folder.
 
+- Copy Migrations.sol and the contract files you want to test from rlf/example/crowdsale/contracts to the contracts folder.
+
+- Modify the compiler's version in truffle-config.js if you're working with older contracts.

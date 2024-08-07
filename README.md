@@ -39,14 +39,14 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
   ```shell
   truffle init
   ```
- ```shell
-  |-- contracts
-  |-- migrations
-  |-- test
-  `-- truffle-config.js
-  
-  3 directories, 1 file
-  ```
+   ```shell
+    |-- contracts
+    |-- migrations
+    |-- test
+    `-- truffle-config.js
+    
+    3 directories, 1 file
+    ```
 
 - Copy the files from rlf/example/crowdsale/migrations to the migrations folder.
 

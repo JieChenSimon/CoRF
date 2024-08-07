@@ -6,17 +6,30 @@
 
 ### Setup
 
-1. Install [golang](https://golang.org/), for example:
+1. Install [solc](https://github.com/ethereum/solidity) 0.4.25:
+```
+$ wget https://github.com/ethereum/solidity/releases/download/v0.4.25/solc-static-linux
+$ chmod +x solc-static-linux
+$ sudo mv solc-static-linux /usr/bin/solc
+```
+
+2. Install [golang](https://golang.org/), for example:
 ```
 $ wget https://dl.google.com/go/go1.10.4.linux-amd64.tar.gz
 $ tar -xvf go1.10.4.linux-amd64.tar.gz
 $ sudo mv go /usr/lib/go-1.10
-$ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
-$ echo 'export GOROOT=/usr/lib/go-1.10' >> ~/.bashrc
-$ echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
-$ echo 'export PATH=$PATH:$GOROOT/bin' >> ~/.bashrc
-$ source ~/.bashrc
+
+Note: Then you should set `GOPATH` to CoRF folder.
 ```
+
+2. Install Ollama `curl https://ollama.ai/install.sh |sh`
+
+3. Install execution backend:
+```
+$ go build -o execution.so -buildmode=c-shared export/execution.go
+```
+
+-----------------------------------------------------------
 
 ### Generate Transaction.json
 ```

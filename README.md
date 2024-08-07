@@ -22,7 +22,7 @@ sudo mv go /usr/lib/go-1.10
 Note: Then you should set `GOPATH` to CoRF folder.
 ```
 
-3. Install Ollama
+3. Install Ollama and pull the base LLMs
 ```
 curl https://ollama.ai/install.sh |sh
 ollama pull codegemma

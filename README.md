@@ -15,9 +15,9 @@ $ sudo mv solc-static-linux /usr/bin/solc
 
 2. Install [golang](https://golang.org/), for example:
 ```
-$ wget https://dl.google.com/go/go1.10.4.linux-amd64.tar.gz
-$ tar -xvf go1.10.4.linux-amd64.tar.gz
-$ sudo mv go /usr/lib/go-1.10
+wget https://dl.google.com/go/go1.10.4.linux-amd64.tar.gz
+tar -xvf go1.10.4.linux-amd64.tar.gz
+sudo mv go /usr/lib/go-1.10
 
 Note: Then you should set `GOPATH` to CoRF folder.
 ```

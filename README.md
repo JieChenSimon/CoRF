@@ -80,7 +80,7 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
 
 #### 1. Initializing File Structure with `truffle`
 
-- Create a new folder named `test` in the path `CoRF/example`. Open a terminal in this folder and execute:
+- Create a new folder, such as `test`, in the path `CoRF/example`. Open a terminal in this folder and execute:
 
   ```shell
   truffle init
@@ -103,7 +103,7 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
 #### 2. Generating corresponding transitions.json File
 
 ```
-python3 script/extract.py --proj /example/test --port 8545
+python3 script/extract.py --proj /example/test
 ```
 Then, a transitions.json file will be generated in the initialized folder path along with the compiled contract files. For example:
 

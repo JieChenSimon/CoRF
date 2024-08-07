@@ -25,6 +25,15 @@ Note: Then you should set `GOPATH` to CoRF folder.
 3. Install Ollama
 ```
 curl https://ollama.ai/install.sh |sh
+ollama pull codegemma
+ollama pull llama3.1
+ollama pull llama3.1:70b
+ollama pull llama3
+ollama pull llama2:13b
+ollama pull gemma2:27b
+ollama pull codellama
+ollama pull codegemma
+ollama pull qwen:32b
 ```
 
 4. Install python dependencies:

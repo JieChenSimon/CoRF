@@ -32,24 +32,47 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
 
 ### Analyze Your Own Smart Contracts
 
-#### Initializing File Structure with `truffle`
+#### 1. Initializing File Structure with `truffle`
 
 - Create a new folder named `test` in the path `rlf/example`. Open a terminal in this folder and execute:
 
   ```shell
   truffle init
   ```
-   ```shell
-    |-- contracts
-    |-- migrations
-    |-- test
-    `-- truffle-config.js
-    
-    3 directories, 1 file
-    ```
+ ```shell
+  |-- contracts
+  |-- migrations
+  |-- test
+  `-- truffle-config.js
+  
+  3 directories, 1 file
+  ```
 
 - Copy the files from rlf/example/crowdsale/migrations to the migrations folder.
 
 - Copy Migrations.sol and the contract files you want to test from rlf/example/crowdsale/contracts to the contracts folder.
 
 - Modify the compiler's version in truffle-config.js if you're working with older contracts.
+
+#### 2. Generating corresponding transitions.json File
+
+```
+python3 script/extract.py --proj /example/test --port 8545
+```
+Then, a transitions.json file will be generated in the initialized folder path along with the compiled contract files. For example:
+
+  ```shell
+  |-- build
+  |   `-- contracts
+  |       |-- Migrations.json
+  |       `-- Rubixi.json
+  |-- contracts
+  |   |-- Migrations.sol
+  |   `-- rubixi.sol
+  |-- migrations
+  |   |-- 1_initial_migration.js
+  |   `-- 2_deploy_contracts.js
+  |-- test
+  |-- transactions.json
+  `-- truffle-config.js
+  ```

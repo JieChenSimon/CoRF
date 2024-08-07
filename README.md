@@ -80,7 +80,7 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
 
 #### 1. Initializing File Structure with `truffle`
 
-- Create a new folder named `test` in the path `rlf/example`. Open a terminal in this folder and execute:
+- Create a new folder named `test` in the path `CoRF/example`. Open a terminal in this folder and execute:
 
   ```shell
   truffle init
@@ -94,9 +94,9 @@ time 600 python3 -m llmfuzz --proj example/crowdsale/ --contract Crowdsale --fuz
   3 directories, 1 file
   ```
 
-- Copy the files from rlf/example/crowdsale/migrations to the migrations folder.
+- Copy the files from CoRF/example/crowdsale/migrations to the migrations folder.
 
-- Copy Migrations.sol and the contract files you want to test from rlf/example/crowdsale/contracts to the contracts folder.
+- Copy Migrations.sol and the contract files you want to test from CoRF/example/crowdsale/contracts to the contracts folder.
 
 - Modify the compiler's version in truffle-config.js if you're working with older contracts.
 

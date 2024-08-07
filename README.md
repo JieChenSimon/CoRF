@@ -4,8 +4,19 @@
 ## Demo Video
 [![CoRF](https://res.cloudinary.com/marcomontalbano/image/upload/v1721658637/video_to_markdown/images/youtube--na0dStb2gfE-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/na0dStb2gfE "CoRF")
 
-### Preparation
-xxx
+### Setup
+
+1. Install [golang](https://golang.org/), for example:
+```
+$ wget https://dl.google.com/go/go1.10.4.linux-amd64.tar.gz
+$ tar -xvf go1.10.4.linux-amd64.tar.gz
+$ sudo mv go /usr/lib/go-1.10
+$ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+$ echo 'export GOROOT=/usr/lib/go-1.10' >> ~/.bashrc
+$ echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+$ echo 'export PATH=$PATH:$GOROOT/bin' >> ~/.bashrc
+$ source ~/.bashrc
+```
 
 ### Generate Transaction.json
 ```
